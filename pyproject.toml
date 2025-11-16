@@ -2,9 +2,18 @@
 name = "cmpe-462"
 version = "0.1.0"
 description = "Add your description here"
-requires-python = ">=3.13"
+requires-python = ">=3.13, <3.14"
 dependencies = [
+    "ipywidgets>=8.1.8",
     "jupyterlab>=4.4.10",
     "matplotlib>=3.10.7",
-    "pandas>=2.3.3",
+    "numpy>=2.3.4",
+    "opencv-python>=4.11.0.86",
+    "polars>=1.35.2",
+    "ruff>=0.14.5",
+    "seaborn>=0.13.2",
 ]
+
+[tool.ruff]
+line-length = 120
+lint.select = ["I", "F", "E", "W"]
