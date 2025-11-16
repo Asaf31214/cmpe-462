@@ -1,0 +1,10 @@
+[project]
+name = "cmpe-462"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "jupyterlab>=4.4.10",
+    "matplotlib>=3.10.7",
+    "pandas>=2.3.3",
+]
