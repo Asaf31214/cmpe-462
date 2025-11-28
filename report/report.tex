@@ -262,8 +262,8 @@ We separated the data as follows:
 With the help of this splitting, we can test an interesting case in which a model is trained using generated images, but tested on the real ones.
 
 
-\subsection*{Future Extraction}
-We have \textbf{72} features in total, 64 of which is the grayscale representation of the image. The other 8 is related to colors, physical attributes, and semantic information.
+\subsection*{Feature Extraction}
+We have \textbf{73} features in total, 64 of which is the grayscale representation of the image. The other 8 is related to colors, physical attributes, and semantic information.
 
 \subsubsection*{Grayscale Histogram (8 $\times$ 8 = 64 features)}
 We convert each image into a 8$\times$8 grayscale image and give the value of each pixel as a feature to our model. This helps distinguishing between objects with similar colors but different surface textures (e.g., the smooth surface of a tomato vs. the rougher texture of a carrot).
