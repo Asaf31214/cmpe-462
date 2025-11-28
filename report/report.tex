@@ -294,5 +294,72 @@ We have selected a set of words to define different classes. However, we paid at
 
 To integrate the multi-modal data, we concatenated the normalized feature vectors from the visual, physical, and semantic domains into a single unified vector (in a csv file).
 
+\section{Logistic Regression Implementation}
+We have implemented the logistic regression using \texttt{numpy} and run tests comparing with \texttt{Scikit-learn}.
+
+\subsection*{Only Image}
+In this experiment, we trained the model using only the flattened grayscale histograms and color statistics (Visual Features).
+
+\subsubsection*{Performance Metrics}
+The below table shows the overall metrics. While the model achieved an F1-score of \textbf{74.16\%} on the validation set (generated images), performance dropped to \textbf{32.12\%} on the test set (real photographs). This suggests the model learned visual features specific to the generative process and did not generalize to real-world noise.
+
+\begin{table}[H]
+    \centering
+    \caption{Performance Metrics for Image-Only Classifier}
+    \vspace{0.2cm}
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Metric} & \textbf{Training} & \textbf{Validation} & \textbf{Test (Photos)} \\
+        \midrule
+        Accuracy   & 77.20\% & 75.11\% & 32.89\% \\
+        Precision  & 0.7652  & 0.7434  & 0.4359  \\
+        Recall     & 0.7665  & 0.7483  & 0.3607  \\
+        F1 Score   & 0.7624  & 0.7416  & 0.3212  \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:image_metrics}
+\end{table}
+
+\subsubsection*{Class-wise AUC Analysis}
+The Area Under the Curve (AUC) scores in Table \ref{tab:image_auc} shows class difficulties.
+\begin{itemize}
+    \item \textbf{Carrot} was the hardest class consistently (Train AUC 0.77, Test AUC 0.56).
+    \item \textbf{Mandarin} showed the best generalization, maintaining a relatively high AUC of 0.81 on real photographs compared to other classes.
+\end{itemize}
+
+\begin{table}[H]
+    \centering
+    \caption{Class-wise AUC Scores (One-vs-All)}
+    \vspace{0.2cm}
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Class} & \textbf{Train AUC} & \textbf{Val AUC} & \textbf{Test AUC} \\
+        \midrule
+        Banana   & 0.9434 & 0.9343 & 0.7039 \\
+        Carrot   & 0.7761 & 0.7424 & 0.5610 \\
+        Cucumber & 0.9736 & 0.9657 & 0.6414 \\
+        Mandarin & 0.9000 & 0.9135 & 0.8111 \\
+        Tomato   & 0.9767 & 0.9719 & 0.7428 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:image_auc}
+\end{table}
+
+\subsubsection*{Training Visualizations}
+Figures \ref{fig:loss_image} and  \ref{fig:roc_image} display the training dynamics. The loss curve shows stable convergence without significant overfitting on the synthetic data.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/plots/image/loss.png}
+    \caption{Training and Validation Loss during the optimization process.}
+    \label{fig:loss_image}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/plots/image/roc.png}
+    \caption{ROC Curves evaluating model performance on the Test Set (Photographs).}
+    \label{fig:roc_image}
+\end{figure}
 
 \end{document}
