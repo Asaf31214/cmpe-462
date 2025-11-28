@@ -94,3 +94,35 @@ AUC for carrot: 0.9249
 AUC for cucumber: 0.7768
 AUC for mandarin: 0.9492
 AUC for tomato: 0.8556
+
+Only text data
+----- Training Metrics -----
+Accuracy: 79.78%
+Precision: 0.8170
+Recall: 0.7828
+F1 Score: 0.7831
+AUC for banana: 0.9727
+AUC for carrot: 0.9671
+AUC for cucumber: 0.9759
+AUC for mandarin: 0.9621
+AUC for tomato: 0.9934
+----- Validation Metrics -----
+Accuracy: 80.00%
+Precision: 0.8146
+Recall: 0.7853
+F1 Score: 0.7875
+AUC for banana: 0.9692
+AUC for carrot: 0.9651
+AUC for cucumber: 0.9764
+AUC for mandarin: 0.9652
+AUC for tomato: 0.9947
+----- Test Metrics -----
+Accuracy: 77.41%
+Precision: 0.8133
+Recall: 0.7537
+F1 Score: 0.7553
+AUC for banana: 0.9614
+AUC for carrot: 0.9547
+AUC for cucumber: 0.9749
+AUC for mandarin: 0.9504
+AUC for tomato: 0.9859
