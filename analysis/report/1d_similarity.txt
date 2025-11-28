@@ -1,0 +1,23 @@
+Intra- and inter-class similarity analysis
+Dataset: 4496 samples, 282 features
+Preprocessing: StandardScaler
+Classes: banana, carrot, cucumber, mandarin, tomato
+--- Outliers ---
+Total outliers (z > 3): 35 (0.78%)
+--- Intra-class similarity (within-class std of distances) ---
+Class banana: std = 4.5546
+Class carrot: std = 4.9409
+Class cucumber: std = 3.2821
+Class mandarin: std = 3.9472
+Class tomato: std = 3.7648
+--- Inter-class similarity (distance between centroids) ---
+banana <-> carrot: 6.3678
+banana <-> cucumber: 9.2614
+banana <-> mandarin: 5.3631
+banana <-> tomato: 12.2052
+carrot <-> cucumber: 6.5839
+carrot <-> mandarin: 4.7803
+carrot <-> tomato: 8.3592
+cucumber <-> mandarin: 8.3212
+cucumber <-> tomato: 9.2963
+mandarin <-> tomato: 8.2233
