@@ -11,9 +11,10 @@ dependencies = [
     "opencv-python>=4.11.0.86",
     "polars>=1.35.2",
     "ruff>=0.14.6",
+    "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
 ]
 
 [tool.ruff]
-line-length = 120
+line-length = 150
 lint.select = ["I", "F", "E", "W"]
