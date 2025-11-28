@@ -1,0 +1,61 @@
+Intra- and inter-class similarity analysis (cosine similarity)
+
+Loaded data\tabular\train_fusion_processed.csv with 4496 samples and 282 features.
+
+--- Feature group: image ---
+Per-class intra similarity stats:
+Class banana: mean=0.8914, std=0.0904, median=0.9185, pairs=319600
+Class carrot: mean=0.8732, std=0.1057, median=0.9081, pairs=439453
+Class cucumber: mean=0.8556, std=0.0841, median=0.8751, pairs=319600
+Class mandarin: mean=0.8722, std=0.0943, median=0.8995, pairs=319600
+Class tomato: mean=0.8364, std=0.1045, median=0.8541, pairs=669903
+Centroid similarity matrix (rows/cols are classes):
+[[1.0000 0.9968 0.9847 0.9986 0.9841]
+ [0.9968 1.0000 0.9943 0.9977 0.9927]
+ [0.9847 0.9943 1.0000 0.9894 0.9958]
+ [0.9986 0.9977 0.9894 1.0000 0.9908]
+ [0.9841 0.9927 0.9958 0.9908 1.0000]]
+Sample-based inter-class mean similarity (mean across class-pairs) = 0.8588
+--- Feature group: numeric ---
+Per-class intra similarity stats:
+Class banana: mean=0.9993, std=0.0011, median=0.9997, pairs=319600
+Class carrot: mean=0.9962, std=0.0066, median=0.9986, pairs=439453
+Class cucumber: mean=0.9998, std=0.0003, median=0.9999, pairs=319600
+Class mandarin: mean=0.9997, std=0.0004, median=0.9999, pairs=319600
+Class tomato: mean=0.9998, std=0.0004, median=0.9999, pairs=669903
+Centroid similarity matrix (rows/cols are classes):
+[[1.0000 0.9954 0.9966 0.9976 0.9968]
+ [0.9954 1.0000 0.9841 0.9864 0.9845]
+ [0.9966 0.9841 1.0000 0.9999 1.0000]
+ [0.9976 0.9864 0.9999 1.0000 0.9999]
+ [0.9968 0.9845 1.0000 0.9999 1.0000]]
+Sample-based inter-class mean similarity (mean across class-pairs) = 0.9928
+--- Feature group: text ---
+Per-class intra similarity stats:
+Class banana: mean=0.4999, std=0.2235, median=0.3333, pairs=319600
+Class carrot: mean=0.4997, std=0.2236, median=0.3333, pairs=439453
+Class cucumber: mean=0.5006, std=0.2235, median=0.6667, pairs=319600
+Class mandarin: mean=0.4290, std=0.2330, median=0.3333, pairs=319600
+Class tomato: mean=0.4284, std=0.2331, median=0.3333, pairs=669903
+Centroid similarity matrix (rows/cols are classes):
+[[1.0000 0.3325 0.1671 0.6242 0.1530]
+ [0.3325 1.0000 0.5020 0.2898 0.0000]
+ [0.1671 0.5020 1.0000 0.0000 0.1617]
+ [0.6242 0.2898 0.0000 1.0000 0.4297]
+ [0.1530 0.0000 0.1617 0.4297 1.0000]]
+Sample-based inter-class mean similarity (mean across class-pairs) = 0.1256
+--- Feature group: fused ---
+Per-class intra similarity stats:
+Class banana: mean=0.8915, std=0.0902, median=0.9186, pairs=319600
+Class carrot: mean=0.8732, std=0.1057, median=0.9081, pairs=439453
+Class cucumber: mean=0.8569, std=0.0829, median=0.8761, pairs=319600
+Class mandarin: mean=0.8723, std=0.0942, median=0.8995, pairs=319600
+Class tomato: mean=0.8364, std=0.1043, median=0.8539, pairs=669903
+Centroid similarity matrix (rows/cols are classes):
+[[1.0000 0.9966 0.9825 0.9985 0.9841]
+ [0.9966 1.0000 0.9905 0.9976 0.9924]
+ [0.9825 0.9905 1.0000 0.9863 0.9936]
+ [0.9985 0.9976 0.9863 1.0000 0.9907]
+ [0.9841 0.9924 0.9936 0.9907 1.0000]]
+Sample-based inter-class mean similarity (mean across class-pairs) = 0.8580
+Detected 87 outliers (saved to report\outliers.csv).
