@@ -1,0 +1,33 @@
+Our Algorithm
+
+Fused data
+----- Training Metrics -----
+Accuracy: 98.47%
+Precision: 0.9845
+Recall: 0.9837
+F1 Score: 0.9840
+AUC for banana: 0.9990
+AUC for carrot: 0.9954
+AUC for cucumber: 0.9993
+AUC for mandarin: 0.9991
+AUC for tomato: 0.9997
+----- Validation Metrics -----
+Accuracy: 98.04%
+Precision: 0.9795
+Recall: 0.9792
+F1 Score: 0.9793
+AUC for banana: 0.9989
+AUC for carrot: 0.9903
+AUC for cucumber: 0.9989
+AUC for mandarin: 0.9996
+AUC for tomato: 0.9994
+----- Test Metrics -----
+Accuracy: 88.37%
+Precision: 0.8996
+Recall: 0.8705
+F1 Score: 0.8654
+AUC for banana: 0.9919
+AUC for carrot: 0.9854
+AUC for cucumber: 0.9799
+AUC for mandarin: 0.9984
+AUC for tomato: 0.9968
