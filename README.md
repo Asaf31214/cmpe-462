@@ -4,6 +4,9 @@
 - If you have the `uv` package manager, running `uv sync` at root directory is enough to install the necessary libraries.
 - Otherwise, you need to manually install `matplotlib, numpy, opencv-python, polars, scikit-learn, seaborn` with your preferred package manager.
 
+### Dataset
+Publicly accessible [here](https://drive.google.com/drive/folders/1Cceit5q3lhH0x4lQarAn-ayfdtF1-35G)
+
 ## Steps
 1. Place the image data (generated ones and photographs) into data/image folder like this:
 ```
