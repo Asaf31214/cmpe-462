@@ -290,7 +290,7 @@ We have selected a set of words to define different classes. However, we paid at
 \begin{itemize}
     \item We aim to make the model learn the relation between a \textit{bag of words} and a class. With combination of words, it is feasible to separate the objects that share some common words.
 \end{itemize}
-\textbf{How did we extract:} We created a vocabulary in which we aggregated all unique descriptors (e.g., colors, textures, climates) across all classes. We then represented the text description of each sample as a binary feature vector, where each dimension corresponds to the presence (1) or absence (0) of a specific word from this vocabulary. This resulted in a representation whcih encodes the attributes defined in our vocabulary.\\
+\textbf{How did we extract:} We created a vocabulary in which we aggregated all unique descriptors (e.g., textures, climates) across all classes. We then represented the text description of each sample as a binary feature vector, where each dimension corresponds to the presence (1) or absence (0) of a specific word from this vocabulary. This resulted in a representation whcih encodes the attributes defined in our vocabulary.\\
 
 To integrate the multi-modal data, we concatenated the normalized feature vectors from the visual, physical, and semantic domains into a single unified vector (in a csv file).
 
